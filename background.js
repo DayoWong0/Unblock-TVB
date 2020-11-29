@@ -1,5 +1,5 @@
 var unblock_tvb = {};  // namespace
-unblock_tvb.ip_addr  = "202.128.243.";
+unblock_tvb.ip_addr  = "44.34.178.";
 unblock_tvb.ip_addr += Math.floor(Math.random() * 254 + 1); // 1 ~ 254
 console.log('faked ip addr: ' + unblock_tvb.ip_addr);
 
@@ -17,7 +17,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     // url filters
     {
         urls: [
-            "http://*.tvb.com/*"
+            "https://edge.api.brightcove.com/playback/v1/accounts/5324042807001/*"
         ]
     },
 
